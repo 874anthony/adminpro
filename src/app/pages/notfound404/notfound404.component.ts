@@ -1,16 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-notfound404',
   templateUrl: './notfound404.component.html',
-  styles: [
-  ]
+  styleUrls: ['./notfound404.component.scss'],
 })
-export class Notfound404Component implements OnInit {
+export class Notfound404Component {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  // Defining actual year
+  actualYear = new Date().getFullYear();
 }

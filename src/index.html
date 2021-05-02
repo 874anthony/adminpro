@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>AdminPro</title>
-  <!-- <base href="/"> -->
+  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicon icon -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
@@ -18,7 +18,21 @@
 
 </head>
 
-<body>
+<body class="fix-header card-no-border fix-sidebar">
+
+  <!-- ============================================================== -->
+  <!-- Preloader - style you can find in spinners.css -->
+  <!-- ============================================================== -->
+  <div class="preloader">
+    <div class="loader">
+      <div class="loader__figure"></div>
+      <p class="loader__label">Admin Pro</p>
+    </div>
+  </div>
+  <!-- ============================================================== -->
+  <!-- Main wrapper - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+
   <app-root></app-root>
 
   <!-- ============================================================== -->
