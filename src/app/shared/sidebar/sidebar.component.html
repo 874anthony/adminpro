@@ -28,7 +28,8 @@
                   <ul aria-expanded="false" class="collapse">
 
                     <li *ngFor="let viewItem of item.views">
-                      <a [routerLink]=" viewItem.url "> {{ viewItem.title }} </a>
+                      <a [routerLink]=" viewItem.url " routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}"> {{ viewItem.title }} </a>
                     </li>
 
                   </ul>
