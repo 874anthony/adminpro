@@ -1,5 +1,7 @@
 // Built-in modules
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 // Ng-if directives
 import { CommonModule } from '@angular/common';
 
@@ -9,6 +11,6 @@ import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [LoginComponent, RegisterComponent],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, FormsModule],
 })
 export class AuthModule {}
